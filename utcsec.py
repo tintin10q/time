@@ -1,3 +1,3 @@
 def utcsec() -> int:
   import time
-  return time.time()
+  return int(time.time())
