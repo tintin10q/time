@@ -5,7 +5,7 @@
  * @param {number|Date} date
  * @param {UnicodeBCP47LocaleIdentifier|UnicodeBCP47LocaleIdentifier[]} lang
  */
-function timesince(date, lang) {
+export function timesince(date, lang) {
   lang ??= "en";
   const rtf = new Intl.RelativeTimeFormat(lang, { numeric: "auto", style: "long" });
   
