@@ -24,7 +24,7 @@ export function timesince(date: number | Date, lang: string) {
   if (Math.abs(asQuarters) >= 1) return rtf.format(Math.floor(asQuarters), "quarter");
 
   const secondsInMonth = 2_628_288;
-  const asMonths = totalSecDiff / secondsInQuarter;
+  const asMonths = totalSecDiff / secondsInMonth;
   if (Math.abs(asMonths) >= 1) return rtf.format(Math.floor(asMonths), "month");
 
   const secondsInWeek = 604_800;
