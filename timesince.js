@@ -10,6 +10,7 @@ export function timesince(date, lang) {
   const rtf = new Intl.RelativeTimeFormat(lang, { numeric: "auto", style: "long" });
   
   const now = Math.floor(Date.now()/1000)
+  date = date instanceof Date ? date.valueOf() : date;
   const totalSecDiff = date - now;
 
   // We devide each time by a smaller unit.
